@@ -1,0 +1,31 @@
+{
+  "name": "melhorando-logs-do-nodejs-com-typescript-pinojs-logdna-2021-09-13",
+  "version": "1.0.0",
+  "description": "Rocketseat - ExpertsClub: Melhorando Logs do Node.js com TypeScript, Pino.js e LogDNA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+	"engines": {
+		"node": "14.17.6",
+		"npm": "6.14.15"
+	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LcsK/melhorando-logs-do-nodejs-com-typescript-pinojs-logdna-2021-09-13.git"
+  },
+  "keywords": [
+		"logs",
+		"logging",
+		"pino",
+		"logdna",
+		"typescript",
+		"rocketseat"
+	],
+  "author": "Lucas Lopes (GitHub Public - LcsK) <lucasaferrlopes@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LcsK/melhorando-logs-do-nodejs-com-typescript-pinojs-logdna-2021-09-13/issues"
+  },
+  "homepage": "https://github.com/LcsK/melhorando-logs-do-nodejs-com-typescript-pinojs-logdna-2021-09-13#readme"
+}
