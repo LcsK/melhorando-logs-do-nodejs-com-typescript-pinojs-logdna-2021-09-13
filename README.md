@@ -1,6 +1,6 @@
 <img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
 
-# TÍTULO
+# Melhorando Logs do Node.js com TypeScript, Pino.js e LogDNA
 
 ## Descrição
 
