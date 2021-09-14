@@ -1,7 +1,9 @@
 import pino from 'pino';
 import { Logger, LogData } from './types';
 
-const pinoLogger = pino();
+const pinoLogger = pino({
+	level: 'debug',
+});
 
 const parseLoggerInputToPinoFormat = <T> ({ message, error, ...data }: LogData<T>) => ({
 	msg: message,
