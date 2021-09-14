@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import { makeLogger } from './Logger';
 
 const logger = makeLogger();
