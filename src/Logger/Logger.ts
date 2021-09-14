@@ -2,7 +2,7 @@ import pino from 'pino';
 import { Logger, LogData } from './types';
 
 const pinoLogger = pino({
-	level: 'debug',
+	level: process.env.LOG_LEVEL,
 });
 
 const parseLoggerInputToPinoFormat = <T> ({ message, error, ...data }: LogData<T>) => ({
