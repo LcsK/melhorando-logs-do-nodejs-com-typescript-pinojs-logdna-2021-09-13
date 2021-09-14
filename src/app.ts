@@ -4,7 +4,7 @@ import { makeLogger } from './Logger';
 
 const logger = makeLogger();
 
-logger.debug({
+logger.error({
 	type: 'LOG_TYPE_1',
 	message: 'oi',
 });
