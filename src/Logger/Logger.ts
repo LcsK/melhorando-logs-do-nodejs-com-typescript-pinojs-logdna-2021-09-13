@@ -1,8 +1,11 @@
 import pino from 'pino';
 import { Logger, LogData } from './types';
+import makeConfig from '../config';
+
+const config = makeConfig();
 
 const pinoLogger = pino({
-	level: process.env.LOG_LEVEL,
+	level: config.logLevel,
 });
 
 const parseLoggerInputToPinoFormat = <T> ({ message, error, ...data }: LogData<T>) => ({
