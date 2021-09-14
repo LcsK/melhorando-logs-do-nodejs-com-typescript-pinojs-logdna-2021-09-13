@@ -4,7 +4,8 @@
   "description": "Rocketseat - ExpertsClub: Melhorando Logs do Node.js com TypeScript, Pino.js e LogDNA",
   "main": "dist/app.js",
   "scripts": {
-    "start:local": "ts-node src/app.ts | pino-pretty"
+    "start:local": "ts-node src/app.ts | pino-pretty",
+		"start:prod": "ts-node src/app.ts | pino-logdna --key \"COLOQUE_A_KEY_AQUI\" --url \"https://logs.br-sao.logging.cloud.ibm.com/logs/ingest\""
   },
   "engines": {
     "node": "14.17.6",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "pino": "^6.13.2"
+    "pino": "^6.13.2",
+    "pino-logdna": "^2.0.0"
   }
 }
