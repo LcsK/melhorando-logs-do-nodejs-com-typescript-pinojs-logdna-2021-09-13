@@ -7,6 +7,11 @@ const config = makeConfig();
 const pinoLogdna = makePinoLogdna({
 	key: config.logdnaKey,
 	url: config.logdnaUrl,
+	onError: console.error,
+});
+
+pinoLogdna.on('error', (err) => {
+	console.error(err)
 });
 
 const pinoLogger = pino({
