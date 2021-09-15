@@ -1,12 +1,17 @@
 import pino from 'pino';
 import { Logger, LogData } from './types';
+import makePinoLogdna from 'pino-logdna';
 import makeConfig from '../config';
 
 const config = makeConfig();
+const pinoLogdna = makePinoLogdna({
+	key: config.logdnaKey,
+	url: config.logdnaUrl,
+});
 
 const pinoLogger = pino({
 	level: config.logLevel,
-});
+}, pinoLogdna);
 
 const parseLoggerInputToPinoFormat = <T> ({ message, error, ...data }: LogData<T>) => ({
 	msg: message,
